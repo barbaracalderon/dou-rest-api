@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <title>DOU Web Restful API</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="language-switch">
+        <a href="#" class="language" data-lang="en">🇺🇸 English</a>
+        <a href="/" class="language" data-lang="pt">Português 🇧🇷</a>
+      </div>
+      <div class="page-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#projeto">Projeto</a>
+        <a href="#jwt">JWT Autorização</a>
+        <a href="#swagger">Swagger</a>
+        <a href="#endpoints">Endpoints Principais</a>
+        <a href="#queries">Queries</a>
+        <a href="#insomnia">Insomnia</a>
+      </div>
+    </nav>
+
+    <header class="main-header">
+      <h1>
+        <strong>Projeto Piloto</strong>: Diário Oficial da União Web RESTful API
+      </h1>
+    </header>
+
+    <section id="sobre" class="light-background">
+      <div class="content-text">
+        <h1>Sobre</h1>
+        <p>
+          Página desenvolvida para reunir informações sobre o projeto piloto
+          Diário Oficial da União Web Restful API, desenvolvido por
+          <a href="https://www.linkedin.com/in/barbaracalderondev/"
+            >Barbara Calderon</a
+          >
+          como parte do
+          <strong
+            ><a
+              href="https://repositorio.ufsc.br/bitstream/handle/123456789/253322/TCC%20-%20Barbara%20Calderon.pdf?sequence=1&isAllowed=y"
+            >
+              Trabalho de Conclusão de Curso</a
+            ></strong
+          >
+          (TCC) do
+          <strong
+            >bacharelado em
+            <a href="https://sin.ufsc.br/"> Sistemas de Informação</a></strong
+          >
+          da <strong>Universidade Federal de Santa Catarina (UFSC)</strong>. O
+          projeto foi implementado no semestre 2023.2 e orientado pelo
+          <a href="https://www.linkedin.com/in/delucca/"
+            >Prof. José Eduardo De Lucca</a
+          >.
+        </p>
+
+        <p>
+          O <strong>Diário Oficial da União</strong> (DOU) é um meio de
+          comunicação oficial do estado brasileiro para com seus nacionais e
+          interessados, criado em 1862. Durante maior parte de sua existência, o
+          DOU foi impresso pela Imprensa Nacional. Desde 2017, a sua publicação
+          foi digitalizada, impressão suspensa e seu formato se tornou acessível
+          apenas de modo online. Este trabalho, inicialmente, consistiu em um
+          estudo de caso que realiza a captura de dados dos DOUs entre os anos
+          de 2020-2022 e fornece subsequente acessibilidade por meio de uma
+          <strong>Web Restful API</strong> que utiliza o framework Swagger para
+          documentação.
+        </p>
+        <p>
+          Essa proposta de pesquisa visava demonstrar a possibilidade de tornar
+          os dados abertos acessíveis para pesquisadores e interessados que
+          desejam consumi-los em grande escala para realizar análises sobre os
+          insumos de dados. Desse modo, é possível consultar o banco de dados
+          por meio da API e realizar pesquisas com recorte temporal e critérios
+          como categoria, tipo de matéria, número de "article" e assinantes de
+          artigos.
+        </p>
+      </div>
+      <div class="content-image">
+        <img src="/static/project.png" width="100%" alt="Project map" />
+      </div>
+    </section>
+
+    <section id="projeto" class="dark-background">
+      <div class="content-text">
+        <h1>Projeto</h1>
+        <p>
+          Inicialmente, o objetivo era criar uma ferramenta padronizada que
+          permitisse a interação entre diferentes sistemas de software
+          automatizado por meio de uma API Web do tipo REST para pesquisa de
+          dados (e metadados) do DOU publicados entre os anos de 2020-2022.
+        </p>
+        <p>
+          Para este projeto, desenvolveu-se um modelo de dados que permitisse
+          extrair informação sobre assinantes de um artigo do DOU, tipo de
+          publicação (despacho, portaria e etc), categoria principal
+          (ministério, secretaria e etc), data de publicação e outros.
+        </p>
+        <p>
+          Devido a limitações de ordem técnica e uso de recursos gratuitos, este
+          projeto-piloto não conseguiu atender a temporalidade de dois anos.
+          Assim, reduziu-se o escopo temporal para 3 dias de dados:
+          <strong>01, 04 e 05 de setembro de 2023</strong>, servindo de prova de
+          conceito inicial para demonstrar não apenas a funcionalidade mas o
+          potencial do projeto e sua escalabilidade.
+        </p>
+      </div>
+      <div class="content-text-second">
+        <div id="swagger">
+          <h1>Swagger</h1>
+        </div>
+        <p>
+          Este projeto conta com uma documentação que pode ser encontrada no
+          <a href="/swagger-ui"
+            >Swagger do Diário Oficial da União Web Restful API</a
+          >. Nessa página, você terá acesso a informações detalhadas sobre os
+          endpoints, parâmetros, modelos de dados, tipagem sobre os dados e
+          demais recursos disponíveis na API.
+        </p>
+        <p>
+          O Swagger é uma ferramenta de software bastante popular para REST APIs
+          e que auxiliam documentar, testar e consumir serviços de uma API Web
+          Restful porque fornece uma interface interativa para teste de
+          endpoints. Além disso, utiliza o padrão de especificação da OpenAPI
+          para descrever sua estrutura.
+        </p>
+        <p>
+          Para mais informações sobre tecnologias utilizadas no projeto, visite
+          o
+          <a href="https://www.github.com/barbaracalderon/dou-rest-api"
+            >repositório remoto hospedado no Github</a
+          >.
+        </p>
+      </div>
+    </section>
+
+    <section id="jwt" class="very-dark-background">
+      <div class="content-image">
+        <img
+          src="/static/keys.jpg"
+          height="100%"
+          width="100%"
+          alt="Keys on table"
+        />
+      </div>
+      <div class="content-text-second">
+        <h1>JWT Autorização</h1>
+        <p>
+          Originalmente, no desenvolvimento da aplicação para a disciplina, este
+          projeto não contava com camada de segurança fornecida por
+          <strong>Json Web Tokens (JWT)</strong> - sendo uma sugestão de
+          trabalho futuro. Esta sugestão foi implementada nesta atual versão.
+        </p>
+        <p>
+          Desse modo, a realização de ações do tipo POST/DELETE nos endpoints da
+          API requer autorização por meio de credenciais específicas: apenas
+          usuário administrador tem capacidade de criar ou deletar registros no
+          banco de dados do projeto. A autorização ocorre por meio de alocação
+          do "bearer + access_token" como valor da chave "authorization" no
+          headers do cliente, após login na API.
+        </p>
+      </div>
+    </section>
+
+    <section id="endpoints" class="dark-background">
+      <div class="content-text">
+        <h1>Enpoints Principais</h1>
+        <p>Esta API possui 5 endpoints principais:</p>
+
+        <li>GET /journal</li>
+        <li>GET /metadata</li>
+        <li>GET /category</li>
+        <li>GET /body</li>
+        <li>GET /signature</li>
+
+        <p>
+          Uma vez realizada uma consulta, perceba que existe um identificador
+          associado à resposta.
+        </p>
+        <p>
+          O identificador "id" associado à resposta de GET /journal fornece o
+          identificador chave-primária de todo o artigo associado àquele
+          journal. Assim, é possível consultar registros específicos pela
+          própria URL do endpoint desejado.
+        </p>
+
+        <strong>Exemplo</strong>
+        <p>GET /journal/222 Retorno - objeto JSON de número 222.</p>
+        <p>
+          Sendo este objeto o artigo associado ao registro 222 no banco de dados
+        </p>
+      </div>
+      <div class="content-text-second">
+        <div id="queries">
+          <h1>Queries</h1>
+        </div>
+        <p>
+          Também é possível realizar consultas nestas endpoints através de
+          queries:
+        </p>
+
+        <strong>Journal</strong>
+        <ul>
+          <li>GET /journal?start_date=01/09/2023&end_date=02/09/2023</li>
+          <li>GET /journal?article=33868347</li>
+        </ul>
+
+        <strong>Metadata</strong>
+        <ul>
+          <li>
+            GET
+            /metadata?art_type=despacho&start_date=01/09/2023&end_date=02/09/2023
+          </li>
+          <li>GET /metadata?art_type=despacho</li>
+        </ul>
+
+        <strong>Category</strong>
+        <ul>
+          <li>
+            GET /category?main=Ministerio da
+            Agricultura&start_date=01/09/2023&end_date=02/09/2020
+          </li>
+          <li>GET /category?main=Ministerio da Agricultura</li>
+        </ul>
+
+        <strong>Signature</strong>
+        <ul>
+          <li>
+            GET /signature?name=João da
+            Silva&start_date=01/09/2023&end_date=02/09/2023
+          </li>
+          <li>GET /signature?name=João da Silva</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="insomnia" class="very-dark-background">
+      <div class="content-text">
+        <h1>Insomnia</h1>
+        <p>
+          Para melhor formulação de queries, controle das requisições e de
+          testes, sugerimos o acesso à API por meio da aplicação Insomnia.
+        </p>
+        <a href="https://insomnia.rest/download" target="_blank"
+          >Download do Insomnia</a
+        >
+      </div>
+      <div class="content-image">
+        <img
+          src="/static/insomnia.png"
+          width="100%"
+          alt="Screen of the insomnia client"
+        />
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        <a
+          href="https://repositorio.ufsc.br/bitstream/handle/123456789/253322/TCC%20-%20Barbara%20Calderon.pdf?sequence=1&isAllowed=y"
+          target="_blank"
+          >PDF do TCC</a
+        >
+        |
+        <a href="URL_DO_REPOSITORIO" target="_blank">Repositório no Github</a> |
+        <a
+          href="https://www.linkedin.com/in/barbaracalderondev/"
+          target="_blank"
+          >Desenvolvido por Barbara Calderon @ 2023</a
+        >
+      </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Padrão de idioma inicial
+        // Ao clicar em um link de idioma
+        $(".language").click(function () {
+          // Obtém o idioma a partir do atributo data-lang
+          let newLanguage = $(this).data("lang");
+
+          // Verifica se o idioma selecionado é diferente do atual
+          if (newLanguage == "en") {
+            updateLanguageEnglish();
+          }
+        });
+
+        // Função para atualizar o conteúdo com base no idioma
+        function updateLanguageEnglish() {
+          // Exemplo: Atualize aqui o conteúdo de cada seção com base no idioma selecionado
+
+          // Título header
+          $("header").html(
+            "<h1><strong>Pilot Project</strong>: The Brazilian State Official Gazettes Web RESTful API</h1>"
+          );
+
+          // Navbar
+          $("nav .page-links").html(
+            '<a href="#sobre">About</a><a href="#projeto">Project</a><a href="#jwt">JWT Authorization</a><a href="#swagger">Swagger</a><a href="#endpoints">Main Endpoints</a><a href="#queries">Queries</a><a href="#insomnia">Insomnia</a>'
+          );
+
+          // Sobre Section
+          $("#sobre .content-text").html(
+            '<h1>About</h1><p>Page developed to gather information about the pilot project Diário Oficial da União Web Restful API, developed by <a href="https://www.linkedin.com/in/barbaracalderondev/">Barbara Calderon</a> as part of the <strong><a href="https://repositorio.ufsc.br/bitstream/handle/123456789/253322/TCC%20-%20Barbara%20Calderon.pdf?sequence=1&isAllowed=y">Undergraduate Thesis</a></strong> (TCC) in <strong>Information Systems <a href="https://sin.ufsc.br/"> at the Federal University of Santa Catarina</a></strong> (UFSC). The project was implemented in the semester 2023.2 and supervised by <a href="https://www.linkedin.com/in/delucca/">Prof. José Eduardo De Lucca</a>.</p><p>The <strong>Diário Oficial da União</strong> (DOU) is an official communication medium of the Brazilian state to its nationals and interested parties, created in 1862. For most of its existence, the DOU was printed by the National Press. Since 2017, its publication has been digitized, printing suspended, and its format has become accessible only online. This work initially consisted of a case study that captures data from DOUs between the years 2020-2022 and provides subsequent accessibility through a <strong>Web Restful API</strong> using the Swagger framework for documentation.</p><p>This research proposal aimed to demonstrate the possibility of making open data accessible to researchers and interested parties who wish to consume them on a large scale for data analysis. Thus, it is possible to query the database through the API and conduct searches with temporal and criteria such as category, type of matter, number of "article," and subscribers to articles.</p>'
+          );
+
+          // Projeto Section
+          $("#projeto .content-text").html(
+            "<h1>Project</h1><p>Initially, the goal was to create a standardized tool that would enable interaction between different automated software systems through a REST-type Web API for data (and metadata) research of the DOU published between the years 2020-2022.</p><p>For this project, a data model was developed to extract information about subscribers to a DOU article, type of publication (dispatch, ordinance, etc.), main category (ministry, secretariat, etc.), publication date, and more.</p><p>Due to technical limitations and the use of free resources, this pilot project could not meet the two-year temporality. Thus, the temporal scope was reduced to 3 days of data: <strong>September 1, 4, and 5, 2023</strong>, serving as an initial proof of concept to demonstrate not only the functionality but also the potential of the project and its scalability.</p>"
+          );
+
+          // Swagger Section
+          $("#projeto .content-text-second").html(
+            '<div id="swagger"><h1>Swagger</h1></div><p>This project features documentation that can be found in the <a href="/swagger-ui">Swagger of the Diário Oficial da União Web Restful API</a>. On this page, you will have access to detailed information about the endpoints, parameters, data models, data typing, and other resources available in the API.</p><p>Swagger is a widely popular software tool for REST APIs that helps document, test, and consume services of a Restful Web API by providing an interactive interface for endpoint testing. Additionally, it uses the OpenAPI specification standard to describe its structure.</p><p>For more information about technologies used in the project, visit the <a href="URL_OF_THE_REPOSITORY">remote repository hosted on Github</a>.</p>'
+          );
+
+          // JWT Section
+          $("#jwt .content-text-second").html(
+            '<h1>JWT Authorization</h1><p>Originally, in the development of the application for the discipline, this project did not have a security layer provided by Json Web Tokens (JWT) - being a suggestion for future work. This suggestion was implemented for this current version.</p><p>Thus, performing POST/DELETE actions on the API endpoints requires authorization through specific credentials: only the admin user has the ability to create or delete records in the project\'s database. Authorization occurs through the allocation of "bearer + access_token" as the value of the "authorization" key in the client headers, after logging into the API.</p>'
+          );
+
+          // Endpoints Section
+          $("#endpoints .content-text").html(
+            '<h1>Main Endpoints</h1><p>This API has 5 main endpoints:</p><li>GET /journal</li><li>GET /metadata</li><li>GET /category</li><li>GET /body</li><li>GET /signature</li><p>Once a query is made, notice that there is an identifier associated with the response.</p><p>The "id" identifier associated with the response from GET /journal provides the primary key identifier of the entire article associated with that journal. Thus, it is possible to query specific records by the URL of the desired endpoint.</p><strong>Example</strong><p>GET /journal/222 Return - JSON object number 222.</p><p>This object is the article associated with record 222 in the database.</p>'
+          );
+
+          // Queries Section
+          $("#endpoints .content-text-second").html(
+            "<div id='queries'><h1>Queries</h1></div><p>It is also possible to perform queries on these endpoints through queries:</p><strong>Journal</strong><ul><li>GET /journal?start_date=01/09/2023&end_date=02/09/2023</li><li>GET /journal?article=33868347</li></ul><strong>Metadata</strong><ul><li>GET /metadata?art_type=despacho&start_date=01/09/2023&end_date=02/09/2023</li><li>GET /metadata?art_type=despacho</li></ul><strong>Category</strong><ul><li>GET /category?main=Ministerio da Agricultura&start_date=01/09/2023&end_date=02/09/2020</li><li>GET /category?main=Ministerio da Agricultura</li></ul><strong>Signature</strong><ul><li>GET /signature?name=João da Silva&start_date=01/09/2023&end_date=02/09/2023</li><li>GET /signature?name=João da Silva</li></ul>"
+          );
+
+          // Insomnia Section
+          $("#insomnia .content-text").html(
+            "<h1>Insomnia</h1><p>For better query formulation, request control, and testing, we recommend accessing the API through the Insomnia application.</p>"
+          );
+
+          // Footer
+          $("footer").html(
+            '<p><a href="https://repositorio.ufsc.br/bitstream/handle/123456789/253322/TCC%20-%20Barbara%20Calderon.pdf?sequence=1&isAllowed=y" target="_blank">Bachelor Thesis</a> | <a href="https://www.github.com/barbaracalderon/dou-rest-api"  target="_blank">Github Repo</a> | <a href="https://www.linkedin.com/in/barbaracalderondev/" target="_blank">Developed by Barbara Calderon @ 2023</a></p>'
+          );
+        }
+      });
+    </script>
+  </body>
+</html>

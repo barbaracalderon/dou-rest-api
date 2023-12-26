@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
+@import url("fontawesome-all.min.css");
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  background-color: #041c32;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a:hover {
+  color: #ecb365;
+}
+
+.language-switch {
+  display: flex;
+  align-items: center;
+}
+
+.language {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.page-links {
+  display: flex;
+}
+
+.page-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+h1 {
+  color: #000000;
+  font-weight: 200;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+}
+
+a:hover {
+  color: #ecb365;
+}
+
+a:visited:hover {
+  color: #ecb365;
+  font-weight: 400;
+}
+
+.main-header {
+  background-image: url(/static/disk.jpeg);
+  background-size: cover;
+  position: relative;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  color: rgb(255, 255, 255); /* Updated color to white */
+  top: 50%;
+  left: 50%;
+  font-size: xx-large;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+}
+
+img {
+  border-radius: 1.5%;
+}
+
+section {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section h1 {
+  color: #333;
+  font-weight: 400;
+}
+
+.content-text {
+  width: 50%;
+  padding: 2%;
+}
+
+.content-text-second {
+  width: 50%;
+  padding: 3%;
+}
+
+.content-image {
+  width: 45%;
+  margin: 3%;
+}
+
+.light-background {
+  background-color: #dde6ed;
+}
+
+.dark-background {
+  background-color: #9db2bf;
+}
+
+.very-dark-background {
+    background-color: #16171b;
+    color: rgb(197, 197, 197);
+}
+
+.very-dark-background h1 {
+    color: rgb(197, 197, 197);
+}
+
+footer {
+  background-color: #04293a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ecb365;
+}

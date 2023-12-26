@@ -1,0 +1,12 @@
+flask
+SQLAlchemy
+flask-sqlalchemy
+flask-smorest
+marshmallow
+gunicorn
+psycopg2
+python-dotenv
+flask-migrate
+postgres
+flask-jwt-extended
+passlib
