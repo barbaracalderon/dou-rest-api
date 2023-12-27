@@ -10,7 +10,7 @@ https://dou-rest-api.onrender.com
 
 Welcome to the landing page for the Diário Oficial da União (DOU) Web Restful API.
 
-This API was developed as part of the Undergraduate Thesis (TCC) in Information Systems at the Federal University of Santa Catarina (UFSC). The project was implemented in the semester 2023.2 and supervised by Prof. José Eduardo De Lucca.
+This API was developed as part of the Undergraduate Thesis (TCC) in Information Systems at the Federal University of Santa Catarina (UFSC). The project was implemented in the semester 2023.2 and supervised by [Prof. José Eduardo De Lucca](https://www.linkedin.com/in/delucca).
 
 ## Project Overview
 
@@ -66,6 +66,7 @@ To explore the API and its documentation, visit [Diário Oficial da União Web R
 
 Feel free to explore, contribute, and utilize the Diário Oficial da União Web Restful API for your research and data analysis needs.
 
+
 # Diário Oficial da União Web Restful API
 https://dou-rest-api.onrender.com
 
@@ -76,7 +77,7 @@ https://dou-rest-api.onrender.com
 
 Bem-vindo à página inicial do projeto piloto Diário Oficial da União (DOU) Web Restful API.
 
-Esta API foi desenvolvida como parte do Trabalho de Conclusão de Curso (TCC) em Sistemas de Informação na Universidade Federal de Santa Catarina (UFSC). O projeto foi implementado no semestre 2023.2 e supervisionado pelo Prof. José Eduardo De Lucca.
+Esta API foi desenvolvida como parte do Trabalho de Conclusão de Curso (TCC) em Sistemas de Informação na Universidade Federal de Santa Catarina (UFSC). O projeto foi implementado no semestre 2023.2 e supervisionado pelo [Prof. José Eduardo De Lucca](https://www.linkedin.com/in/delucca).
 
 ## Visão Geral do Projeto
 
