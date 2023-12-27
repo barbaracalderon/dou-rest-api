@@ -23,6 +23,10 @@ Para este projeto, um modelo de dados foi desenvolvido para extrair informaçõe
 
 ## Tecnologias Utilizadas
 
+* Python
+* Javascript
+* CSS
+* HTML
 * Flask
 * Flask Smorest
 * Flask Migrate
@@ -34,15 +38,18 @@ Para este projeto, um modelo de dados foi desenvolvido para extrair informaçõe
 * PostgreSQL
 * Passlib
 
-A API foi criada com **Flask**, um microframework web para Python que fornece o essencial para a construção de aplicações web. A extensão **Smorest** do Flask adiciona suporte para a construção de APIs Restful, pois oferece recursos adicionais para criar uma API bem estruturada e documentada usando o padrão **OpenAPI**.
+O projeto foi principalmente desenvolvido em **Python**. A página inicial, sua estrutura e estilo, foram feitos em **HTML** e **CSS**. Algum **Javascript** foi usado para adicionar a funcionalidade de mudança de idiomas.
 
-A extensão **Migrate** do Flask gerenciou as migrações de banco de dados usando SQLAlchemy e simplificou o processo de atualização dos esquemas do banco de dados conforme o projeto evoluía. A extensão **Flask-JWT-Extended** para **JSON Web Tokens** (JWT) permitiu a proteção de rotas e recursos verificando JWTs, com um mecanismo para autenticação e autorização de usuários.
+A API foi criada com **Flask**, um microframework web para Python que fornece recursos essenciais para construir aplicações web. A extensão **Smorest** do Flask adiciona suporte para construir APIs Restful, pois fornece recursos adicionais para criar uma API bem estruturada e documentada usando o padrão **OpenAPI**.
 
-**SQLAlchemy** também foi utilizado, sendo um toolkit SQL e biblioteca de **Object-Relational-Mapping (ORM)** para Python. Ele forneceu um conjunto de API de alto nível para interagir com bancos de dados relacionais, permitindo o trabalho com objetos Python. **Marshmallow** foi usado para converter tipos de dados complexos, como objetos, para e de JSON.
+A extensão **Migrate** do Flask lidou com as migrações de banco de dados usando o SQLAlchemy e simplificou o processo de atualização dos esquemas do banco de dados à medida que o projeto evoluía. A extensão **Flask-JWT-Extended** para **JSON Web Tokens** (JWT) permitiu a proteção de rotas e recursos verificando JWTs, com um mecanismo para autenticação e autorização de usuários.
 
-**Psycopg2** é um adaptador **PostgreSQL** para Python, permitindo que aplicações Python interajam com bancos de dados PostgreSQL. **Passlib** é uma biblioteca de hash de senha para Python. O servidor utilizado foi o **GUnicorn** (Green Unicorn) por ser um servidor WSGI leve e pronto para produção, utilizado comumente para servir aplicações Flask em ambiente de produção no Render.
+O **SQLAlchemy** também foi usado, pois é uma caixa de ferramentas SQL e uma biblioteca de **Object-Relational-Mapping (ORM)** para Python. Ele forneceu um conjunto de APIs de alto nível para interagir com bancos de dados relacionais, permitindo o trabalho com objetos Python. O **Marshmallow** foi utilizado para converter tipos de dados complexos, como objetos, para e de JSON.
 
-Essas bibliotecas são comumente usadas juntas em aplicações Flask para construir APIs web com autenticação segura, interagir com bancos de dados, lidar com migrações e serializar/deserializar dados.
+O **Psycopg2** é um adaptador **PostgreSQL** para Python, pois permite que aplicações Python interajam com bancos de dados PostgreSQL. O **Passlib** é uma biblioteca de hash de senhas para Python. O servidor utilizado foi o **GUnicorn** (Green Unicorn), porque é um servidor WSGI leve e pronto para produção para executar aplicações web Python no Render, comumente usado para servir aplicações Flask em ambiente de produção.
+
+Essas bibliotecas são comumente usadas juntas em aplicações Flask para construir APIs web com autenticação segura, interagir com bancos de dados, lidar com migrações e serializar/desserializar dados.
+
 
 ## Objetivos da Pesquisa
 

@@ -8,7 +8,7 @@ https://dou-rest-api.onrender.com
 
 ## About
 
-Welcome to the landing page for the Diário Oficial da União (DOU) Web Restful API.
+Welcome to the repository that hosts the API and its landing page for the project **Diário Oficial da União (DOU) Web Restful API**.
 
 This API was developed as part of the Undergraduate Thesis (TCC) in Information Systems at the Federal University of Santa Catarina (UFSC). The project was implemented in the semester 2023.2 and supervised by [Prof. José Eduardo De Lucca](https://www.linkedin.com/in/delucca).
 
@@ -23,6 +23,10 @@ For this project, a data model was developed to extract information about signer
 
 ## Techs Used
 
+* Python
+* Javascript
+* CSS
+* HTML
 * Flask
 * Flask Smorest
 * Flask Migrate
@@ -33,6 +37,8 @@ For this project, a data model was developed to extract information about signer
 * Psycopg2
 * PostgreSQL
 * Passlib
+
+The project was mainly developed in **Python**. The landing page, its structure and style, was done in **HTML** and **CSS**. Some **Javascript** was used to add the changing languages functionality.
 
 The API was created with **Flask**, a micro web framework for Python that provides essentials for building web applications. The **Smorest** extension of Flask adds a support building Restful APIs because it provides additional features for creating a well-structured and documented API using the **OpenAPI standard**.  
 
