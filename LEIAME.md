@@ -4,7 +4,7 @@ _[English](README.md)/Português._
 https://dou-rest-api.onrender.com
 
 
-![Página inicial da API Restful Web DOU](landing_page.png)
+![Página inicial da API Restful Web DOU](static/landing_page.png)
 
 ## Sobre
 

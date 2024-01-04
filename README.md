@@ -4,7 +4,7 @@ _English/[Português](LEIAME.md)._
 https://dou-rest-api.onrender.com
 
 
-![The DOU Web Restful API landing page](landing_page.png)
+![The DOU Web Restful API landing page](static/landing_page.png)
 
 ## About
 
