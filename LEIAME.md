@@ -8,7 +8,7 @@ https://dou-rest-api.onrender.com
 
 ## Sobre
 
-Bem-vindo à página inicial do projeto piloto Diário Oficial da União (DOU) Web Restful API.
+Bem-vindo à página inicial do projeto piloto Diário Oficial da União (DOU) Web Restful API e a página inicial do projeto (landing-page).
 
 Esta API foi desenvolvida como parte do Trabalho de Conclusão de Curso (TCC) em Sistemas de Informação na Universidade Federal de Santa Catarina (UFSC). O projeto foi implementado no semestre 2023.2 e supervisionado pelo [Prof. José Eduardo De Lucca](https://www.linkedin.com/in/delucca).
 
