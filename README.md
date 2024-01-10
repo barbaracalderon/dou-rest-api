@@ -35,7 +35,7 @@ The research proposal aimed to demonstrate the possibility of making open data a
 ## Information and Contact
 
 - **API URL:** [https://dou-rest-api.onrender.com/](https://dou-rest-api.onrender.com/)
-- **Github Repo:** [https://github.com/barbaracalderon/dou-rest-api]([https://github.com/barbaracalderon/dou-rest-api)
+- **Github Repo:** [https://github.com/barbaracalderon/dou-rest-api](https://github.com/barbaracalderon/dou-rest-api)
 - **Bachelor Thesis PDF:** [UFSC Repositório](https://repositorio.ufsc.br/bitstream/handle/123456789/253322/TCC%20-%20Barbara%20Calderon.pdf?sequence=1&isAllowed=y)
 - **Author Linkedin:** [Barbara Calderon](https://www.linkedin.com/in/barbaracalderondev)
 
