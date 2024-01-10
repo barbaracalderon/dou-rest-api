@@ -50,6 +50,20 @@ O **Psycopg2** é um adaptador **PostgreSQL** para Python, pois permite que apli
 
 Essas bibliotecas são comumente usadas juntas em aplicações Flask para construir APIs web com autenticação segura, interagir com bancos de dados, lidar com migrações e serializar/desserializar dados.
 
+### Deploy
+
+- Render
+- ElephantSQL
+- Start.sh
+- Requirements.txt
+- WSGI.py
+
+O deploy do projeto foi realizado na plataforma [Render](https://render.com/), utilizando uma conta gratuita como "Web Service". Além da configuração das variáveis de ambiente, foi criado o arquivo `requirements.txt`, que atua como comando de construção (build command), e desenvolvido o script `start.sh`, utilizado como comando de inicialização (start command). 
+
+O banco de dados está hospedado na plataforma [ElephantSQL](https://www.elephantsql.com/), também em uma conta gratuita com espaço limitado. Esta plataforma fornece serviço de hospedagem de banco de dados PostgreSQL baseado em nuvem.
+
+Por fim, o `WSGI` (Interface de Gateway para Servidores Web) foi empregado para a comunicação entre o servidor web e a aplicação em Python.
+
 
 ## Objetivos da Pesquisa
 

@@ -50,6 +50,21 @@ The **Migrate** extension of Flask handled the database migrations using SQLAlch
 
 These libraries are commonly used together in Flask applications to build web APIs with secure authentication, interact with databases, handle migrations, and serialize/deserialize data.
 
+### Deploy
+
+- Render
+- ElephantSQL
+- Start.sh
+- Requirements.txt
+- WSGI.py
+
+The project deployment was carried out on the [Render](https://render.com/) platform, using a free account as a "Web Service." In addition to configuring environment variables, the `requirements.txt` file was created, serving as a build command, and the `start.sh` script was developed, serving as a start command. 
+
+The database is hosted on the [ElephantSQL](https://www.elephantsql.com/) platform, also on a free account with limited space. This platform provides cloud-based PostgreSQL database hosting services.
+
+Finally, `WSGI` (Web Server Gateway Interface) was employed for communication between the web server and the Python application.
+
+
 ## Research Objectives
 
 ![Project](static/project_small.png)
