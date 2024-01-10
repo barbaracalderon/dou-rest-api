@@ -35,7 +35,7 @@ A proposta de pesquisa tinha como objetivo demonstrar a possibilidade de tornar 
 ## Informações e Contato
 
 - **API URL:** [https://dou-rest-api.onrender.com/](https://dou-rest-api.onrender.com/)
-- **Github Repo:** [https://github.com/barbaracalderon/dou-rest-api]([https://github.com/barbaracalderon/dou-rest-api)
+- **Github Repo:** [https://github.com/barbaracalderon/dou-rest-api](https://github.com/barbaracalderon/dou-rest-api)
 - **Trabalho de Conclusão de Curso (TCC) em PDF:** [Repositório UFSC](https://repositorio.ufsc.br/bitstream/handle/123456789/253322/TCC%20-%20Barbara%20Calderon.pdf?sequence=1&isAllowed=y)
 - **Linkedin:** [Barbara Calderon](https://www.linkedin.com/in/barbaracalderondev)
 
