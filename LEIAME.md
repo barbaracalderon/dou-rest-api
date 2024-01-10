@@ -20,6 +20,24 @@ Este trabalho concentra-se em um estudo de caso que captura dados dos DOUs entre
 
 Para este projeto, um modelo de dados foi desenvolvido para extrair informações sobre signatários de documentos em um artigo DOU, o tipo de sua publicação (despacho, portaria, etc.), categoria principal (ministério, secretaria, etc.), data de publicação e mais.
 
+## Objetivos da Pesquisa
+
+![Project](static/project_small.png)
+
+A proposta de pesquisa tinha como objetivo demonstrar a possibilidade de tornar dados abertos acessíveis a pesquisadores e partes interessadas para análise de dados em larga escala. Recursos-chave da API incluem:
+
+- Captura de dados DOU de 3 dias
+- Acessibilidade por meio de uma Web Restful API
+- Documentação usando o framework Swagger
+- Consulta ao banco de dados para análise de dados
+- Funcionalidade de pesquisa baseada em critérios temporais, categoria, tipo de matéria, número de "artigo" e assinantes de artigos.
+
+## Informações e Contato
+
+- **API URL:** [https://dou-rest-api.onrender.com/](https://dou-rest-api.onrender.com/)
+- **Github Repo:** [https://github.com/barbaracalderon/dou-rest-api]([https://github.com/barbaracalderon/dou-rest-api)
+- **Trabalho de Conclusão de Curso (TCC) em PDF:** [Repositório UFSC](https://repositorio.ufsc.br/bitstream/handle/123456789/253322/TCC%20-%20Barbara%20Calderon.pdf?sequence=1&isAllowed=y)
+- **Linkedin:** [Barbara Calderon](https://www.linkedin.com/in/barbaracalderondev)
 
 ## Tecnologias Utilizadas
 
@@ -64,27 +82,8 @@ O banco de dados está hospedado na plataforma [ElephantSQL](https://www.elephan
 
 Por fim, o `WSGI` (Interface de Gateway para Servidores Web) foi empregado para a comunicação entre o servidor web e a aplicação em Python.
 
-
-## Objetivos da Pesquisa
-
-![Project](static/project_small.png)
-
-A proposta de pesquisa tinha como objetivo demonstrar a possibilidade de tornar dados abertos acessíveis a pesquisadores e partes interessadas para análise de dados em larga escala. Recursos-chave da API incluem:
-
-- Captura de dados DOU de 3 dias
-- Acessibilidade por meio de uma Web Restful API
-- Documentação usando o framework Swagger
-- Consulta ao banco de dados para análise de dados
-- Funcionalidade de pesquisa baseada em critérios temporais, categoria, tipo de matéria, número de "artigo" e assinantes de artigos.
-
 ## Como Começar
 
 Para explorar a API e sua documentação, visite [Diário Oficial da União Web Restful API Documentation](https://dou-rest-api.onrender.com/swagger-ui).
-
-## Mais Informações e Contato
-
-- **Repositório:** [DOU REST API](https://www.github.com/barbaracalderon/dou-rest-api)
-- **Trabalho de Conclusão de Curso:** [Repositório UFSC](https://repositorio.ufsc.br/bitstream/handle/123456789/253322/TCC%20-%20Barbara%20Calderon.pdf?sequence=1&isAllowed=y)
-- **Linkedin:** [Barbara Calderon](https://www.linkedin.com/in/barbaracalderondev)
 
 Sinta-se à vontade para explorar, contribuir e utilizar a Diário Oficial da União Web Restful API para suas pesquisas e necessidades de análise de dados.

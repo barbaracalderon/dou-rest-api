@@ -20,6 +20,24 @@ This work focuses on a case study capturing data from DOUs between 2020-2022. Th
 
 For this project, a data model was developed to extract information about signers of documents in a DOU article, the type of its publication (dispatch, ordinance, etc.), main category (ministry, secretariat, etc.), publication date, and more.
 
+## Research Objectives
+
+![Project](static/project_small.png)
+
+The research proposal aimed to demonstrate the possibility of making open data accessible to researchers and interested parties for large-scale data analysis. Key features of the API include:
+
+- Capture of 3 day DOU data 
+- Accessibility through a Web Restful API
+- Documentation using the Swagger framework
+- Querying the database for data analysis
+- Search functionality based on temporal criteria, category, type of matter, number of "article," and subscribers to articles.
+
+## Information and Contact
+
+- **API URL:** [https://dou-rest-api.onrender.com/](https://dou-rest-api.onrender.com/)
+- **Github Repo:** [https://github.com/barbaracalderon/dou-rest-api]([https://github.com/barbaracalderon/dou-rest-api)
+- **Bachelor Thesis PDF:** [UFSC Repositório](https://repositorio.ufsc.br/bitstream/handle/123456789/253322/TCC%20-%20Barbara%20Calderon.pdf?sequence=1&isAllowed=y)
+- **Author Linkedin:** [Barbara Calderon](https://www.linkedin.com/in/barbaracalderondev)
 
 ## Techs Used
 
@@ -64,27 +82,8 @@ The database is hosted on the [ElephantSQL](https://www.elephantsql.com/) platfo
 
 Finally, `WSGI` (Web Server Gateway Interface) was employed for communication between the web server and the Python application.
 
-
-## Research Objectives
-
-![Project](static/project_small.png)
-
-The research proposal aimed to demonstrate the possibility of making open data accessible to researchers and interested parties for large-scale data analysis. Key features of the API include:
-
-- Capture of 3 day DOU data 
-- Accessibility through a Web Restful API
-- Documentation using the Swagger framework
-- Querying the database for data analysis
-- Search functionality based on temporal criteria, category, type of matter, number of "article," and subscribers to articles.
-
 ## Getting Started
 
 To explore the API and its documentation, visit [Diário Oficial da União Web Restful API Documentation](https://dou-rest-api.onrender.com/swagger-ui).
-
-## More Information and Contact
-
-- **Repository:** [DOU REST API](https://www.github.com/barbaracalderon/dou-rest-api)
-- **Bachelor Thesis:** [UFSC Repositório](https://repositorio.ufsc.br/bitstream/handle/123456789/253322/TCC%20-%20Barbara%20Calderon.pdf?sequence=1&isAllowed=y)
-- **Linkedin:** [Barbara Calderon](https://www.linkedin.com/in/barbaracalderondev)
 
 Feel free to explore, contribute, and utilize the Diário Oficial da União Web Restful API for your research and data analysis needs.
