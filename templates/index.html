@@ -24,6 +24,8 @@
         <a href="#endpoints">Endpoints Principais</a>
         <a href="#queries">Queries</a>
         <a href="#insomnia">Insomnia</a>
+        <a href="#developer">Developer</a>
+
       </div>
     </nav>
 
@@ -242,24 +244,44 @@
       </div>
     </section>
 
-    <section id="insomnia" class="very-dark-background">
+    <section id="redirects" class="very-dark-background">
       <div class="content-text">
+      <div id="insomnia">
         <h1>Insomnia</h1>
         <p>
           Para melhor formulação de queries, controle das requisições e de
-          testes, sugerimos o acesso à API por meio da aplicação Insomnia.
+          testes, sugerimos o acesso à API por meio da aplicação Insomnia que oferece interface amigável e a possibilidade de setar variáveis de ambiente.
         </p>
+        <p>
         <a href="https://insomnia.rest/download" target="_blank"
           >Download do Insomnia</a
         >
-      </div>
-      <div class="content-image">
+        </p>
         <img
-          src="/static/insomnia.png"
-          width="100%"
-          alt="Screen of the insomnia client"
-        />
+        src="/static/insomnia.png"
+        width="100%"
+        alt="Screen of the insomnia client"
+      />
       </div>
+    </div>
+    <div class="content-text">
+      <div id="developer">
+        <h1>Developer</h1>
+        <p>
+          O repositório deste projeto está disponível na plataforma Github. Nele, é possível encontrar todo o código relacionado com a implementação da API, envolvendo schemas, recursos e modelos - além desta página.
+        </p>
+        <p>
+        <a href="https://github.com/barbaracalderon/dou-rest-api" target="_blank"
+          >Repositório do projeto</a
+        >
+        </p>
+        <img
+        src="/static/code.png"
+        width="100%"
+        alt="Code snippet"
+      />
+      </div>
+    </div>
     </section>
 
     <footer>
@@ -270,7 +292,7 @@
           >PDF do TCC</a
         >
         |
-        <a href="URL_DO_REPOSITORIO" target="_blank">Repositório no Github</a> |
+        <a href="https://github.com/barbaracalderon/dou-rest-api" target="_blank">Repositório no Github</a> |
         <a
           href="https://www.linkedin.com/in/barbaracalderondev/"
           target="_blank"
@@ -338,9 +360,13 @@
             "<div id='queries'><h1>Queries</h1></div><p>It is also possible to perform queries on these endpoints through queries:</p><strong>Journal</strong><ul><li>GET /journal?start_date=01/09/2023&end_date=02/09/2023</li><li>GET /journal?article=33868347</li></ul><strong>Metadata</strong><ul><li>GET /metadata?art_type=despacho&start_date=01/09/2023&end_date=02/09/2023</li><li>GET /metadata?art_type=despacho</li></ul><strong>Category</strong><ul><li>GET /category?main=Ministerio da Agricultura&start_date=01/09/2023&end_date=02/09/2020</li><li>GET /category?main=Ministerio da Agricultura</li></ul><strong>Signature</strong><ul><li>GET /signature?name=João da Silva&start_date=01/09/2023&end_date=02/09/2023</li><li>GET /signature?name=João da Silva</li></ul>"
           );
 
-          // Insomnia Section
-          $("#insomnia .content-text").html(
-            "<h1>Insomnia</h1><p>For better query formulation, request control, and testing, we recommend accessing the API through the Insomnia application.</p>"
+          // Redirects Section
+          $("#redirects #insomnia").html(
+            "<div id='insomnia'><h1>Insomnia</h1><p>For better query formulation, request control, and testing, we recommend accessing the API through the Insomnia application, which provides a user-friendly interface and the ability to set environment variables.</p><p><a href='https://insomnia.rest/download' target='_blank'>Download Insomnia</a></p><img src='/static/insomnia.png' width='100%' alt='Screen of the insomnia client'/>"
+          );
+
+          $("#redirects #developer").html(
+            "<div id='developer'><h1>Developer</h1><p>The repository of this project is available on the Github platform. In it, you can find all the code related to the implementation of the API, including schemas, resources endpoints and models - in addition to this landing page.</p><p><a href='https://github.com/barbaracalderon/dou-rest-api' target='_blank'>Repo for this project</a></p><img src='/static/code.png' width='100%' alt='Code snippet from journals endpoint'/>"
           );
 
           // Footer

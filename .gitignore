@@ -1,3 +1,6 @@
 venv/
-migrations/
 .env
+.vscode
+data.db
+__pycache__
+*.pyc

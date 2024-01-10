@@ -149,3 +149,11 @@ footer a {
 footer a:hover {
   color: #ecb365;
 }
+
+#developer {
+  width: 80%;
+}
+
+#insomnia {
+  width: 80%
+}
