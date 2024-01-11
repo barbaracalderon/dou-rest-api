@@ -12,6 +12,8 @@ Bem-vindo à página inicial do projeto piloto Diário Oficial da União (DOU) W
 
 Esta API foi desenvolvida como parte do Trabalho de Conclusão de Curso (TCC) em Sistemas de Informação na Universidade Federal de Santa Catarina (UFSC). O projeto foi implementado no semestre 2023.2 e supervisionado pelo [Prof. José Eduardo De Lucca](https://www.linkedin.com/in/delucca).
 
+_PS: Ao contrário da versão apresentada no TCC, esta versão da API adota JSON Web Tokens (JWT) como mecanismo de autenticação e autorização._
+
 ## Visão Geral do Projeto
 
 O Diário Oficial da União (DOU) serve como meio oficial de comunicação do Estado brasileiro com seus nacionais e partes interessadas, estabelecido em 1862. Tradicionalmente impresso pela Imprensa Nacional, o DOU passou por uma transformação em 2017, tornando-se totalmente digitalizado e acessível apenas online.

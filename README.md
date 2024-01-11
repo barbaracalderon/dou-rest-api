@@ -12,6 +12,8 @@ Welcome to the repository that hosts the API and its landing page for the projec
 
 This API was developed as part of the Undergraduate Thesis (TCC) in Information Systems at the Federal University of Santa Catarina (UFSC). The project was implemented in the semester 2023.2 and supervised by [Prof. José Eduardo De Lucca](https://www.linkedin.com/in/delucca).
 
+_PS: Unlike the version in the thesis, this API version adopts JSON Web Tokens (JWT) as an authentication and authorization mechanism._
+
 ## Project Overview
 
 The Diário Oficial da União (DOU) serves as an official communication medium of the Brazilian state to its nationals and interested parties, established in 1862. Traditionally printed by the National Press, the DOU underwent a transformation in 2017, becoming fully digitized and accessible only online.
