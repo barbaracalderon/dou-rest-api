@@ -32,7 +32,7 @@ The research proposal aimed to demonstrate the possibility of making open data a
 - Accessibility through a Web Restful API
 - Documentation using the Swagger framework
 - Querying the database for data analysis
-- Search functionality based on temporal criteria, category, type of matter, number of "article," and subscribers to articles.
+- Search functionality based on temporal criteria, category, type of matter, number of "article," and signers.
 
 ## Information and Contact
 
